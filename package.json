@@ -1,0 +1,24 @@
+{
+  "name": "kodilla19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoleonard/kodilla19.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoleonard/kodilla19/issues"
+  },
+  "homepage": "https://github.com/leoleonard/kodilla19#readme",
+  "dependencies": {
+    "npm": "^5.6.0",
+    "uuid": "^3.2.1"
+  }
+}
