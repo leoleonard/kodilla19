@@ -34,3 +34,5 @@ function comments(state = [], action) {
         , ...state.comments];
     }
 }
+
+export comments();
