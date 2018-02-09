@@ -1,16 +1,21 @@
 import {ADD_COMMENT, EDIT_COMMENT, REMOVE_COMMENT, THUMB_UP_COMMENT, THUMB_DOWN_COMMENT} from './actions'
 
+import { combineReducers } from 'redux';
+import comments from './comments';
+import users from './users';
+
+const app = combineReducers({
+    comments,
+    users
+});
+
+
+
 const initialState = {
   comments: [],
   users: []
 }
 
-// function reducer(state, action) {
-//   if (!state) {
-//     return initialState;
-//   }
-//   return state;
-// }
 
 function reducer(state = initialState, action) {
     switch(action.type) {
