@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/leoleonard/kodilla19#readme",
   "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "npm": "^5.6.0",
     "uuid": "^3.2.1"
   }
