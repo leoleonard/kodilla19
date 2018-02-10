@@ -8,7 +8,8 @@ import './CommentContainer.css'
 
 const mapDispatchToProps = dispatch => ({
   thumbUpComment: (id) => dispatch(thumbUpComment(id)),
-  thumbDownComment: (id) => dispatch(thumbDownComment(id))
+  thumbDownComment: (id) => dispatch(thumbDownComment(id)),
+  deleteComment: (id) => dispatch(deleteComment(id))
 });
 
 export default connect(null, mapDispatchToProps)(Comment);

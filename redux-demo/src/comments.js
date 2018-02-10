@@ -21,10 +21,7 @@ function comments(state = [], action) {
           , ...state.comments];
 
         case REMOVE_COMMENT:
-          return [{
-            id: action.id
-          }
-        , ...state];
+          return state.filter(comment => comment.id !== action.id); 
 
         case THUMB_UP_COMMENT:
                     return state.map(comment => {
