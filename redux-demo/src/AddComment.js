@@ -1,7 +1,6 @@
 import React from 'react';
 import addComment from './actions';
 import store from './index';
-import './AddComment.css';
 
 let textInput = '';
 const AddComment = () =>

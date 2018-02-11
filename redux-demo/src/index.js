@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-import reducer from './reducer'; 
+import reducer from './reducer';
 import { Provider } from 'react-redux'; // odpowiada za {connect}
 import { createStore } from 'redux';
 
@@ -18,8 +18,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-store.dispatch(addComment('pierwszy komentarz'));
-store.dispatch(addComment('drugi komentarz'));
-store.dispatch(addComment('trzeci komentarz'));
+store.dispatch(addComment('przykładowy komentarz'));
 
 export default store;
