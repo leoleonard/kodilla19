@@ -2,14 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import addComment from './actions';
 
 import reducer from './reducer';
 import { Provider } from 'react-redux'; // odpowiada za {connect}
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
+import DevTools from './DevTools';
 
-import addComment from './actions';
+const store = createStore(
+  reducer,
+  DevTools.instrument()
+);
 
-const store = createStore(reducer);
 
 ReactDOM.render(
   <Provider store={store}>

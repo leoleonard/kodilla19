@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import AddComment from './AddComment.js';
 import CommentsListContainer from './CommentsListContainer';
+import DevTools from './DevTools';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <p>Lista komentarzy</p>
       <AddComment />
       <CommentsListContainer />
+      <DevTools />
     </div>
   );
 };
