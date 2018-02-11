@@ -1,3 +1,5 @@
+// komponent-kontener
+
 import {connect} from 'react-redux';
 import CommentsList from './CommentsList';
 

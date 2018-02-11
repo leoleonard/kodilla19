@@ -1,3 +1,7 @@
+// Pojedynczy komponent
+// text - zawartosc komentarza
+// votes
+
 import React from 'react';
 
 

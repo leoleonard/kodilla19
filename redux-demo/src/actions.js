@@ -8,44 +8,43 @@ export const EDIT_COMMENT = 'EDIT_COMMENT';
 export function addComment(text) {
   return {
     type: ADD_COMMENT,
-    text,
+    text: text,
     id: uuid.v4()
   }
 }
 
-export function editComment(id, text) {
+export function editComment(commentId, text) {
   return {
     type: EDIT_COMMENT,
-    id,
+    id: commentId,
     text
   }
 }
 
-export function deleteComment(id) {
+export function deleteComment(commentId) {
   return {
     type: REMOVE_COMMENT,
-    id
+    id: commentId
   }
 }
 
 // typ akcji
 export const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
 // kreator akcji
-export function thumbUpComment(id) {
+export function thumbUpComment(commentId) {
   return {
     type: THUMB_UP_COMMENT,
-    id
+    id: commentId
   }
 }
 export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
-export function thumbDownComment(id) {
+export function thumbDownComment(commentId) {
   return {
     type: THUMB_DOWN_COMMENT,
-    id
+    id: commentId
   }
 }
 
 
 export default addComment;
-// export default thumbUpComment;

@@ -1,3 +1,4 @@
+// główny kontener
 import React, { Component } from 'react';
 import './App.css';
 import CommentsListContainer from './CommentsListContainer';
